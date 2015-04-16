@@ -16,7 +16,7 @@ module Users
       }
     end
 
-    [:facebook].each do |provider|
+    [:facebook, :dropbox_oauth2].each do |provider|
       provides_callback_for provider
     end
 

@@ -235,6 +235,7 @@ Devise.setup do |config|
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', scope: 'user,public_repo'
 
   config.omniauth :facebook, '634708549897968', '3b8a40f04bcc9b668ff9567dc9f16f50'
+  config.omniauth :dropbox_oauth2, '1siq0jf9pafnavm', 'ycr0vsuldmjagqd'
 
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or

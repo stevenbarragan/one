@@ -64,6 +64,10 @@ GEM
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
     diff-lcs (1.2.5)
+    dropbox-api (0.4.2)
+      hashie
+      multi_json
+      oauth
     erubis (2.7.0)
     execjs (2.3.0)
     faraday (0.9.1)
@@ -95,6 +99,7 @@ GEM
     multipart-post (2.0.0)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
+    oauth (0.4.7)
     oauth2 (1.0.0)
       faraday (>= 0.8, < 0.10)
       jwt (~> 1.0)
@@ -104,6 +109,8 @@ GEM
     omniauth (1.2.2)
       hashie (>= 1.2, < 4)
       rack (~> 1.0)
+    omniauth-dropbox-oauth2 (0.2.0)
+      omniauth-oauth2
     omniauth-facebook (2.0.1)
       omniauth-oauth2 (~> 1.2)
     omniauth-oauth2 (1.2.0)
@@ -211,9 +218,11 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 4.1.0)
   devise
+  dropbox-api
   jbuilder (~> 2.0)
   jquery-rails
   omniauth
+  omniauth-dropbox-oauth2
   omniauth-facebook
   pry-byebug
   pry-rails
